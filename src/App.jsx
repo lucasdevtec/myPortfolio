@@ -1,7 +1,9 @@
+import CoomingSon from "./assets/Components/CommingSonComponent/CommingSon";
+
 function App() {
   return (
     <>
-      <p>Comming Soom</p>
+      <CoomingSon />
     </>
   );
 }
