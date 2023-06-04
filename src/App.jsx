@@ -1,9 +1,9 @@
-import CoomingSon from "./assets/Components/CommingSonComponent/CommingSon";
+import Header from "./assets/Components/Header/Header";
 
 function App() {
   return (
     <>
-      <CoomingSon />
+      <Header />
     </>
   );
 }
