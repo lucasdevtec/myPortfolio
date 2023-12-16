@@ -1,10 +1,12 @@
+import AboutConteiner from "./AboutConteiner";
+
 import "../styles/components/maincontent.sass";
 
 export default function MainContent() {
   return (
     <>
       <main id="main">
-        <p>ola</p>
+        <AboutConteiner />
       </main>
     </>
   );

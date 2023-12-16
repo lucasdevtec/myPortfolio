@@ -1,5 +1,6 @@
 import Avatar from "../img/profile.png";
 import Redes from "./Redes";
+import Information from "./Information";
 
 import "../styles/components/sidebar.sass";
 
@@ -10,7 +11,7 @@ export default function SideBar() {
         <img src={Avatar} alt="Lucas Gabriel" />
         <p className="title">Desenvolvedor</p>
         <Redes />
-        <p className="Informações"></p>
+        <Information />
         <a
           href="http://"
           target="_blank"
