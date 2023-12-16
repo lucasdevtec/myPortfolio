@@ -1,5 +1,16 @@
+@use 'variables'
+
 *
-  padding: 0
-  margin: 0
-  box-sizing: border-box
-  font-family: 'helvatica' 
+ padding: 0
+ margin: 0
+ box-sizing: border-box
+ font-family: variables.$font-Stack
+
+body
+  background-color: variables.$bodyColor
+
+h1 
+  color: variables.$textColor
+
+a, svg
+  transition: .4s
