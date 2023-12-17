@@ -8,7 +8,7 @@ export default function SideBar() {
   return (
     <>
       <aside id="sidebar">
-        <img src={Avatar} alt="Lucas Gabriel" />
+        <img src={Avatar} alt="Lucas Oliveira" />
         <p className="title">Desenvolvedor</p>
         <Redes />
         <Information />

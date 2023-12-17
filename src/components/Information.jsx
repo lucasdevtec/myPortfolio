@@ -1,22 +1,27 @@
 import "../styles/components/info.sass";
 
-import { AiFillEnvironment, AiFillPhone, AiFillMail } from "react-icons/ai";
+import { AiFillEnvironment } from "react-icons/ai";
+import { IoIosMail } from "react-icons/io";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const dadosDeContato = [
   {
     name: "Telefone",
-    icon: <AiFillPhone id="phone-icon" />,
+    icon: <RiWhatsappFill id="phone-icon" />,
     data: "(84) 99979-7930",
+    direcionamento: "https://wa.me/+5584999797930",
   },
   {
     name: "Email",
-    icon: <AiFillMail id="email-icon" />,
+    icon: <IoIosMail id="email-icon" />,
     data: "lucasprogjr@gmail.com",
+    direcionamento: "mailto:lucasprogjr@gmail.com",
   },
   {
     name: "Localização",
     icon: <AiFillEnvironment id="pin-icon" />,
     data: "Natal - RN",
+    direcionamento: "https://maps.app.goo.gl/nGdepeQxTB71FXWG8",
   },
 ];
 
@@ -25,7 +30,14 @@ const Information = () => {
     <section id="information">
       {dadosDeContato.map((dadodecontato) => (
         <div className="info-card" key={dadodecontato.name}>
-          {dadodecontato.icon}
+          <a
+            target="_blank"
+            className="hovered"
+            href={dadodecontato.direcionamento}
+            rel="noreferrer"
+          >
+            {dadodecontato.icon}
+          </a>
           <div>
             <h3>{dadodecontato.name}</h3>
             <p>{dadodecontato.data}</p>

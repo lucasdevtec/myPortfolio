@@ -4,7 +4,7 @@ import "../styles/components/redes.sass";
 
 const redesSociais = [
   {
-    name: "linkedIn",
+    name: "linkedin",
     icon: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/lucasdevtec/",
   },
