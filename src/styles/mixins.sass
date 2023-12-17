@@ -8,13 +8,16 @@
 @mixin btn
   padding: 1rem 1.2rem
   color: variables.$textColor
-  background: variables.$gradient
+  background-color: variables.$backgroundColor
   border-radius: 3rem
   text-decoration: none
   text-align: center
+  &:hover
+    background: variables.$gradient
 
 @mixin gradient-border
     content: ""
     background: variables.$gradient
     height: 3px
     width: 30%
+    border-radius: variables.$cardBorderRadius
